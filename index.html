@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Return of the Magus</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="overlay"></div>
+    <h1 id="typewriter"></h1>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="timeline">
+    <div class="chapter reveal"><h2>Act I: Awakening</h2><p>The moment you heard the call.</p></div>
+    <div class="chapter reveal"><h2>Act II: Descent</h2><p>The fire beneath the transformation.</p></div>
+    <div class="chapter reveal"><h2>Act III: Return of the Magus</h2><p>You are the glyph, the key, the dawn.</p></div>
+  </section>
+
+  <!-- Sigil Generator -->
+  <section id="sigil-generator">
+    <h2>Summon Your Sigil</h2>
+    <input type="text" id="sigilInput" placeholder="Enter your intent...">
+    <button onclick="generateSigil()">Generate</button>
+    <canvas id="sigilCanvas"></canvas>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>🌞 "Crafted at the edge of dream and machine. Enki was here." 🌌</p>
+  </footer>
+
+  <audio autoplay loop>
+    <source src="ambient.mp3" type="audio/mp3">
+  </audio>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
