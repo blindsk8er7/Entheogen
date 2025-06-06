@@ -1,84 +1,68 @@
+
 body {
-  margin: 0;
   font-family: 'Courier New', monospace;
-  background: #0f0f0f;
+  background-color: #0e0e0e;
   color: #f0f0f0;
-  overflow-x: hidden;
+  margin: 0;
+  line-height: 1.6;
 }
 
-#hero {
-  height: 100vh;
-  background: url('space-bg.jpg') no-repeat center center fixed;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+header.hero {
+  background: linear-gradient(120deg, #111, #222);
+  padding: 80px 20px;
   text-align: center;
 }
 
-#hero .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-}
-
-#typewriter {
+header.hero h1 {
   font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+header.hero p {
+  font-style: italic;
+  color: #ccc;
+}
+
+.buttons a {
+  display: inline-block;
+  background: #444;
   color: #fff;
-  z-index: 10;
-}
-
-.timeline {
-  padding: 100px 20px;
-}
-
-.chapter {
-  margin: 80px 0;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 1s ease-out;
-}
-
-.chapter.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-#sigil-generator {
-  text-align: center;
-  padding: 100px 20px;
-}
-
-input {
-  padding: 10px;
-  width: 300px;
-  font-size: 1em;
-  margin-right: 10px;
-}
-
-button {
   padding: 10px 20px;
-  background: #ff00aa;
-  border: none;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #222;
   color: white;
-  font-size: 1em;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+
+form button {
+  background: #9900ff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-canvas {
-  display: block;
-  margin: 30px auto;
-  background: #1a1a1a;
-  border: 2px solid #ff00aa;
-}
-
 footer {
-  padding: 40px;
-  text-align: center;
   background: #111;
-  font-size: 1em;
-  color: #aaa;
-  border-top: 1px solid #333;
+  color: #888;
+  padding: 30px 20px;
+  text-align: center;
+  font-style: italic;
 }
